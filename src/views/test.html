@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>Title</title>
+    <link rel="stylesheet" href="http://localhost:8080/arcgis_js_api/4.6/esri/css/main.css">
+    <!--<link rel="stylesheet"href="https://js.arcgis.com/4.5/esri/css/main.css">-->
+    <style>
+        html,
+        body,#viewDiv{
+            padding:0;
+            margin: 0;
+            width:100%;
+            height:100%;
+        }
+    </style>
+    <script>
+
+        window.dojoConfig = {
+            deps: ["main/main_tdt"],
+            packages: [
+                {
+                    name: "main",
+                    location: window.location.origin + "/TDTV46/src/ts/main"
+                }
+            ]
+        };
+    </script>
+</head>
+<body>
+<div id="viewDiv"></div>
+
+<script src="http://localhost:8080/arcgis_js_api/4.6/init.js"></script>
+</body>
+</html>
